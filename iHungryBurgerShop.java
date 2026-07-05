@@ -1,5 +1,7 @@
 
-import javax.swing.JFrame;
+import java.awt.*;
+import javax.swing.*;
+
 
 
 class iHungryBurgerShop extends JFrame{
@@ -8,6 +10,16 @@ class iHungryBurgerShop extends JFrame{
         setSize(700,500);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        //title
+        JLabel title=new JLabel("Welcome to Burgers"); 
+        title.setFont(new Font("Arial",Font.BOLD,26));
+        title.setForeground(Color.RED);
+        title.setBounds(190,20,350,40);
+        add(title);
+
+        
+
         setVisible(true);
     }
 
